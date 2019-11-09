@@ -1,26 +1,31 @@
- 
-#!/bin/bash -x
-         isFulltime=1
-         isParttime=2
-         Rateperhour=50
-        salaryofEmloyee=0
-     for(( Number=1; Number<=20; Number++ ))
-      do  
-           randomCheck=$((RANDOM %3))
+        #!/bin/bash -x
+        	 isFulltime=1
+        	 isParttime=2
+        	 Rateperhour=50
+       		 salaryofEmloyee=0
+       		 temp=0
+       		 valid =true
+    		 while($valid)
+     		 do  
+          		 randomCheck=$((RANDOM %3))
 
-         case $randomCheck in 
-                $isFulltime)             
-                 hourpresent=8;;
+        		 case $randomCheck in 
+               			 $isFulltime)             
+                		 hourpresent=8;;
+              		  * )
+               		 hourpresent=0;;
 
-                * )
-                hourpresent=0;;
-              $isParttime )
-
-                 hourpresent=4;;
-     esac
-     salary1=$(($hourpresent*$Rateperhour))
-     salaryofEmployee=$(($salary1+$salaryofEmloyee))
+             		 $isParttime )
+                 	hourpresent=4;;
+    	   esac
+   	   if [ $temp -le 50 ]
+     	   then
+            break
+          else
+    		 temp=$(($hourpresent+$temp))  
+ 	 fi
+          
      done
-     echo $salayofEmloyee
-     printf "\n"
+    salaryofEmployee=$(($temp*$Rateperhour))
+ 
 

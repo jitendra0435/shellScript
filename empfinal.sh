@@ -4,7 +4,7 @@
  if [ $present==1 ]
   then
                
-                 hourpresent=8
+                 echo "present"
   else  [ $present==0 ]
                 
                  echo "absent"

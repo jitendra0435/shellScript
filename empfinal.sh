@@ -1,5 +1,5 @@
 #!/bin/bash -x                                                                  
- present=$((RANDOM %3))
+ empCheck=$((RANDOM %3))
  Rateperhour=50
  if [ $present==1 ]
   then

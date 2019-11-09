@@ -17,13 +17,3 @@
     salary=$(($hourpresent*$Rateperhour))
     echo $salary
 
- fi
-salary=$(($hourpresent*$Rateperhour))
-    echo $salary
-
-
-
-
-    
-
-    

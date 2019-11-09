@@ -1,5 +1,5 @@
 #!/bin/bash -x                                                                  
- randomCheck=$((RANDOM %3))
+ empCheck=$((RANDOM %3))
  Rateperhour=50
  if [ $present==1 ]
   then
@@ -16,3 +16,14 @@
  fi
     salary=$(($hourpresent*$Rateperhour))
     echo $salary
+
+ fi
+salary=$(($hourpresent*$Rateperhour))
+    echo $salary
+
+
+
+
+    
+
+    

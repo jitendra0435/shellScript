@@ -5,9 +5,9 @@
         salaryofEmloyee=0
      for(( Number=1; Number<=20; Number++ ))
       do  
-           randomCheck=$((RANDOM %3))
+           empCheck=$((RANDOM %3))
 
-         case $randomCheck in 
+         case $empCheck in 
                 $isFulltime)             
                  hourpresent=8;;
 

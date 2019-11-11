@@ -1,18 +1,11 @@
-<<<<<<< HEAD
-#!/bin/bash -x
- function myfunction ()
-{
- empCheck=$((RANDOM%3))
-=======
-#!/bin/bash -x                                                                  
- employeeCheck=$((RANDOM %3))
->>>>>>> master
+!/bin/bash -x                                                                  
+ present=$((RANDOM %3))
  Rateperhour=50
- if [ $empCheck==1 ]
+ if [ $present==1 ]
   then
                  echo "present"
                  hourpresent=8
-  elif [ $empCheck==0 ]
+  elif [ $present==0 ]
   then
                  hourpresent=0
                  echo "absent"
@@ -24,6 +17,5 @@
     salary=$(($hourpresent*$Rateperhour))
     echo $salary
 
-}
 
-result="$(myfunction)"
+

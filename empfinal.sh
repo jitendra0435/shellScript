@@ -2,6 +2,7 @@
 #!/bin/bash -x
  function myfunction ()
 {
+ echo "hi"
  empCheck=$((RANDOM%3))                                                                 
  Rateperhour=50
  if [ $empCheck==1 ]

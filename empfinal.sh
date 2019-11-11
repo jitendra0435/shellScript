@@ -1,11 +1,13 @@
-#!/bin/bash -x                                                                  
+#!/bin/bash -x
+ function myfunction ()
+{
  empCheck=$((RANDOM%3))
  Rateperhour=50
- if [ $present==1 ]
+ if [ $empCheck==1 ]
   then
                  echo "present"
                  hourpresent=8
-  elif [ $present==0 ]
+  elif [ $empCheck==0 ]
   then
                  hourpresent=0
                  echo "absent"
@@ -17,3 +19,6 @@
     salary=$(($hourpresent*$Rateperhour))
     echo $salary
 
+}
+
+result="$(myfunction)"

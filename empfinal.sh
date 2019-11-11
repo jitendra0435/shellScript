@@ -1,12 +1,8 @@
-<<<<<<< HEAD
+
 #!/bin/bash -x
  function myfunction ()
 {
- empCheck=$((RANDOM%3))
-=======
-#!/bin/bash -x                                                                  
- employeeCheck=$((RANDOM %3))
->>>>>>> master
+ empCheck=$((RANDOM%3))                                                                 
  Rateperhour=50
  if [ $empCheck==1 ]
   then

@@ -10,5 +10,5 @@
 	operations[result3]=$(($c+$a/$b))		
 	operations[result4]=$(($a%$b+$c))
         
-	 echo "Results in Ascending order" $(printf "%s\n" ${operations[@]} | sort -n )
+	 echo "Results in Descending order" $(printf "%s\n" ${operations[@]} | sort -nr )
          

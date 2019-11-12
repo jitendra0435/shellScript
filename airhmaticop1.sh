@@ -10,7 +10,13 @@
 	operations[result3]=$(($c+$a/$b))		
 	operations[result4]=$(($a%$b+$c))
         
-	 echo "Results in Ascending order"$(printf "%s\n" ${operations[@]} |sort -n)
-	 echo "Results in Descending order" $(printf "%s\n" ${operations[@]} | sort -nr )
+	 echo "output in Dictionary format"
+         ${operations[result1]}
+         ${operations[result2]}
+         ${operations[result3]}
+         ${operations[result4]}
+	 
+	 $(printf "%s\n" ${operations[@]} |sort -n)
+	 $(printf "%s\n" ${operations[@]} | sort -nr )
 	 
          
